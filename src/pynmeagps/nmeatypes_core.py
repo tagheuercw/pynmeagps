@@ -485,6 +485,13 @@ NMEA_MSGIDS_PROP = {
     "TNLVGK": "Vector information",
     "TNLVHD": "Heading information",
     # ***************************************************************
+    # Philips
+    # ***************************************************************
+    "SNYSFP": "Sat information",
+    "SSST": "Sat CM0 and elevation",
+    "FOO": "Dummy message",
+    # ***************************************************************
+    # Dummy message for testing only
     # Furuno
     # ***************************************************************
     "FECGPATT": "Attitude yaw, pitch, roll",
