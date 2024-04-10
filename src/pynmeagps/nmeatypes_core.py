@@ -308,6 +308,11 @@ NMEA_MSGIDS_PROP = {
     "TNLVGK": "Vector information",
     "TNLVHD": "Heading information",
     # ***************************************************************
+    # Philips
+    # ***************************************************************
+    "SNYSFP": "Sat information",
+    "SSST": "Sat CM0 and elevation",
+    # ***************************************************************
     # Dummy message for testing only
     # ***************************************************************
     "FOO": "Dummy message",

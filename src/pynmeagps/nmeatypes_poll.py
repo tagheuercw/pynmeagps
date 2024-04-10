@@ -215,4 +215,10 @@ NMEA_PAYLOADS_POLL = {
     "TNLVHD": {
         "msgId": ST,  # 'VHD'
     },
+    "SNYSFP": {
+        "msgId": ST,  # 'SFP'
+    },
+    "SSST": {
+        "msgId": ST,  # 'SST'
+    },
 }

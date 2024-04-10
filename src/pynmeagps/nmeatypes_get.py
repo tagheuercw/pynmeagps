@@ -1185,6 +1185,36 @@ NMEA_PAYLOADS_GET = {
         "unit": CH,  # 'M'
     },
     # *********************************************
+    # Philips
+    # *********************************************
+    "SNYSFP": {  #
+        "msgId": ST, # SFP
+        "signalId": ST,
+        "usedSat": ST,
+    },
+    "SSST": {  # Sat CNO and elevation
+        "msgId": ST,  # SST
+        "totalSentence": IN,
+        "sentenceNumber": IN,
+        "satgroup": (  # repeating group * 3
+            3,
+            {
+                "satId": IN,
+                "cno": IN,
+                "reserved1": IN,
+                "reserved2": IN,
+                "reserved3": IN,
+                "ephemeris": IN,
+                "reserved4": CH, #5 digits
+                "reserved5": CH, #P or N
+                "reserved6": CH, #F
+                "reserved7": CH, #null
+                "systemId": IN,
+                "signalId": IN,
+             },
+        ),
+    },
+    # *********************************************
     # Dummy message for error testing
     # *********************************************
     "FOO": {"spam": "Z2", "eggs": "Y1"},
