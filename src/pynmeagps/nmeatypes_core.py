@@ -72,6 +72,21 @@ FIXTYPE_GGA = {
 }
 """Fix type from GGA"""
 
+GNSSBANDLIST = {
+    0: "GPS L1",
+    1: "GPS L5",
+    2: "GLONASS L1",
+    3: "QZSS L1CA",
+    4: "QZSS L1S",
+    5: "SZSS L5",
+    6: "BeiDou B1l",
+    7: "BeiDou B1C",
+    8: "BeiDou B2a",
+    9: "Galileo L1",
+    10: "Galileo L5",
+    11: "Navic",
+}
+
 GPSEPOCH0 = datetime(1980, 1, 6)
 """GPS epoch base date"""
 # Geodetic datum spheroid values:
@@ -487,8 +502,10 @@ NMEA_MSGIDS_PROP = {
     # ***************************************************************
     # Philips
     # ***************************************************************
-    "SNYSFP": "Sat information",
+    "SNYSFP": "Satellites used for position computing",
+    "SNYSFV": "Satellites used for velocity computing",
     "SSST": "Sat CM0 and elevation",
+    "SGME": "Something with no spec",
     "FOO": "Dummy message",
     # ***************************************************************
     # Dummy message for testing only
