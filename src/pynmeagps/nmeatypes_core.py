@@ -37,6 +37,21 @@ GNSSLIST = {
     7: "NAVIC",
 }
 
+GNSSBANDLIST = {
+    0: "GPS L1",
+    1: "GPS L5",
+    2: "GLONASS L1",
+    3: "QZSS L1CA",
+    4: "QZSS L1S",
+    5: "SZSS L5",
+    6: "BeiDou B1l",
+    7: "BeiDou B1C",
+    8: "BeiDou B2a",
+    9: "Galileo L1",
+    10: "Galileo L5",
+    11: "Navic",
+}
+
 GPSEPOCH0 = datetime(1980, 1, 6)
 # Geodetic datum spheroid values:
 # WGS84, ETRS89, EPSG4326
@@ -310,8 +325,10 @@ NMEA_MSGIDS_PROP = {
     # ***************************************************************
     # Philips
     # ***************************************************************
-    "SNYSFP": "Sat information",
+    "SNYSFP": "Satellites used for position computing",
+    "SNYSFV": "Satellites used for velocity computing",
     "SSST": "Sat CM0 and elevation",
+    "SGME": "Something with no spec",
     # ***************************************************************
     # Dummy message for testing only
     # ***************************************************************

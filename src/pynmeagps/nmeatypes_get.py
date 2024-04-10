@@ -1188,13 +1188,53 @@ NMEA_PAYLOADS_GET = {
     # Philips
     # *********************************************
     "SNYSFP": {  #
-        "msgId": ST, # SFP
-        "signalId": ST,
-        "usedSat": ST,
+        "signalId": IN,
+        "satgroup": (  # repeating group * 3
+            32,
+            {
+                "usedSat": IN,
+            },
+        ),
+    },
+    "SNYSFV": {  #
+        "signalId": IN,
+        "satgroup": (  # repeating group * 3
+            32,
+            {
+                "usedSat": IN,
+            },
+        ),
+    },
+    "SGME": {  # Sat CNO and elevation
+        "totalSentences": IN,
+        "sentenceNumber": IN,
+        "gnssSignal": IN, # GNSSBANDLIST
+        "svId": IN,
+        "timeOffsetNs": IN,
+        "receivedSvTime": DE,
+        "receivedSvTimeUncertaintyNs": DE,
+        "snr": DE,
+        "pseudoRange": DE,
+        "pseudoRangeRate": DE,
+        "pseudoRangeRateUncertaintyMps": DE,
+        "accumulatedDeltaRangeState": HX,
+        "accumulatedDeltaRange": DE,
+        "accululatedDeltaRangeUncertaintyMps": ST,
+        "reserved1": IN,
+        "elevation": DE,
+        "azimuth": DE,
+        "reserved2": ST,
+        "dllStatus": IN,
+        "reserved3": IN,
+        "health": IN,
+        "doppler": IN,
+        "reserved4": ST,
+        "reserved5": ST,
+        "almanachState": CH,
+        "frequencyChannel": IN,
     },
     "SSST": {  # Sat CNO and elevation
-        "msgId": ST,  # SST
-        "totalSentence": IN,
+        "totalSentences": IN,
         "sentenceNumber": IN,
         "satgroup": (  # repeating group * 3
             3,
