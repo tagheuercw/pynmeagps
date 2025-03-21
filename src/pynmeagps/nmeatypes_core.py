@@ -323,12 +323,15 @@ NMEA_MSGIDS_PROP = {
     "TNLVGK": "Vector information",
     "TNLVHD": "Heading information",
     # ***************************************************************
-    # Philips
+    # SONY
     # ***************************************************************
     "SNYSFP": "Satellites used for position computing",
     "SNYSFV": "Satellites used for velocity computing",
     "SSST": "Sat CM0 and elevation",
     "SGME": "Something with no spec",
+    "SEPU": "Accuracy indices (1sig)",
+    "SNYCMP": "Covariance matrix for position",
+    "SNYCMV": "Covariance matrix for velocity",
     # ***************************************************************
     # Dummy message for testing only
     # ***************************************************************

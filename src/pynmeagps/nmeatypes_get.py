@@ -1185,11 +1185,11 @@ NMEA_PAYLOADS_GET = {
         "unit": CH,  # 'M'
     },
     # *********************************************
-    # Philips
+    # SONY
     # *********************************************
     "SNYSFP": {  #
         "signalId": IN,
-        "satgroup": (  # repeating group * 3
+        "satgroup": (  # repeating group * 32
             32,
             {
                 "usedSat": IN,
@@ -1198,7 +1198,7 @@ NMEA_PAYLOADS_GET = {
     },
     "SNYSFV": {  #
         "signalId": IN,
-        "satgroup": (  # repeating group * 3
+        "satgroup": (  # repeating group * 32
             32,
             {
                 "usedSat": IN,
@@ -1252,6 +1252,35 @@ NMEA_PAYLOADS_GET = {
                 "systemId": IN,
                 "signalId": IN,
              },
+        ),
+    },
+    "SEPU": {  # Accuracy indices (1sig)
+        "pos3Dstd": DE, # m
+        "pos2Dstd": DE, # m
+        "latstd": DE, # m
+        "lonstd": DE, # m
+        "altstd": DE, # m
+        "vel3Dstd": DE, # km/h
+        "vel2Dstd": DE, # km/h
+        "headstd": DE, # deg
+        "EWVelstd": DE, # km/h
+        "NSVelstd": DE, # km/h
+        "upVelstd": DE, # km/h
+    },
+    "SNYCMP": {  #
+        "covgroup": (  # repeating group * 9
+            9,
+            {
+                "posCov": DE,
+            },
+        ),
+    },
+    "SNYCMV": {  #
+        "covgroup": (  # repeating group * 9
+            9,
+            {
+                "velCov": DE,
+            },
         ),
     },
     # *********************************************
