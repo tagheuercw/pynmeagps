@@ -219,12 +219,21 @@ NMEA_PAYLOADS_POLL = {
         "msgId": ST,  # 'SFP'
     },
     "SNYSFV": {
-        "msgId": ST,  # 'SFP'
+        "msgId": ST,  # 'SFV'
     },
     "SSST": {
         "msgId": ST,  # 'SST'
     },
     "SGME": {
-        "msgId": ST,  # 'SST'
+        "msgId": ST,  # 'GME'
+    },
+    "SEPU": {
+        "msgId": ST,  # 'EPU'
+    },
+    "SNYCMP": {
+        "msgId": ST,  # 'CMP'
+    },
+    "SNYCMV": {
+        "msgId": ST,  # 'CMV'
     },
 }
