@@ -332,6 +332,7 @@ NMEA_MSGIDS_PROP = {
     "SEPU": "Accuracy indices (1sig)",
     "SNYCMP": "Covariance matrix for position",
     "SNYCMV": "Covariance matrix for velocity",
+    "SPRA": "Beginning of NMEA sequence",
     # ***************************************************************
     # Dummy message for testing only
     # ***************************************************************

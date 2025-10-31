@@ -236,4 +236,7 @@ NMEA_PAYLOADS_POLL = {
     "SNYCMV": {
         "msgId": ST,  # 'CMV'
     },
+    "SPRA": {
+        "msgId": ST,  # 'PRA'
+    },
 }
